@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "a615d8a4-a30d-46a5-8606-6095257f1a8d",
+		"name": "Test projekt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Api status",
+			"_postman_id": "7d1889de-9335-4d0f-892a-e3eff8abf558",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://mailinator.com/api/v2/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Test 2",
+			"_postman_id": "d91f0343-5bec-4fa4-acca-ddc080c18471",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{main URL}}/status"
+			},
+			"response": [
+				{
+					"id": "aef99cee-aabb-43c7-9804-c7ea1478728d",
+					"name": "Test 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mailinator.com/api/v2/domains/:domain/inboxes/:inbox",
+							"protocol": "https",
+							"host": [
+								"mailinator",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"domains",
+								":domain",
+								"inboxes",
+								":inbox"
+							],
+							"variable": [
+								{
+									"key": "domain",
+									"value": null
+								},
+								{
+									"key": "inbox",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Jan 2023 18:23:24 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "cf-q-config;dur=6.9999950937927e-06"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AJv6NLW9ldgI6OReyk4LBF344wStumamVgDp%2FduJH8d00LXLh5W1SEsT2s5r0p217EqPYACGLLyfJKGCfmxVPsSy4%2FXYtLDgxOq7lNZ9aafVpf9e43GRxRHVvke3mH%2F9\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78da5212c8efd885-CPH"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "c9047c47-0f20-4dac-a72c-88ee57406353",
+			"key": "main URL",
+			"value": "https://mailinator.com/api/v2",
+			"type": "string"
+		}
+	]
+}
