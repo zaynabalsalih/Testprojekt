@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Api status",
-			"_postman_id": "7d1889de-9335-4d0f-892a-e3eff8abf558",
+			"id": "7d1889de-9335-4d0f-892a-e3eff8abf558",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -20,7 +20,7 @@
 		},
 		{
 			"name": "Test 2",
-			"_postman_id": "d91f0343-5bec-4fa4-acca-ddc080c18471",
+			"id": "d91f0343-5bec-4fa4-acca-ddc080c18471",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -113,14 +113,62 @@
 					"body": null
 				}
 			]
+		},
+		{
+			"name": "https://mailinator.com/api/v2/domains/private/inboxes/testinbox?limit=2&sort=descending&token=d44f0c52cebb4b039a594e773852c90f",
+			"id": "448d1e5b-7cfd-4a15-b3f9-f3dc2f4699d1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "d44f0c52cebb4b039a594e773852c90f"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mailinator.com/api/v2/domains/private/inboxes/testinbox?limit=2&sort=descending&token=d44f0c52cebb4b039a594e773852c90f",
+					"protocol": "https",
+					"host": [
+						"mailinator",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"domains",
+						"private",
+						"inboxes",
+						"testinbox"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "sort",
+							"value": "descending"
+						},
+						{
+							"key": "token",
+							"value": "d44f0c52cebb4b039a594e773852c90f",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "c9047c47-0f20-4dac-a72c-88ee57406353",
+			"id": "5048fedd-11ae-4062-aa43-ba94fe9087b4",
 			"key": "main URL",
-			"value": "https://mailinator.com/api/v2",
-			"type": "string"
+			"value": "https://mailinator.com/api/v2"
 		}
 	]
 }
